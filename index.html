@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/login.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/home.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/inner.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.29/angular-ui-router.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"
+    ></script>
+
+    <!-- <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-route.min.js"></script> -->
+
+    <!-- <script src="node_modules/angular-sweetalert/SweetAlert.min.js"></script>
+    <script src="node_modules/sweetalert/lib/sweet-alert.min.js"></script> -->
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/login.js"></script>
+    <script src="app/js/signup.js"></script>
+    <script src="app/js/home.js"></script>
+    <script src="app/js/main.js"></script>
+    <script src="app/js/inner.js"></script>
+
+    <script src="app/api/api.js"></script>
+  </head>
+  <body>
+    <!-- <ng-include src="'app/search.html'"></ng-include> -->
+    <!-- <div ui-view></div> -->
+    <ui-view></ui-view>
+  </body>
+</html>

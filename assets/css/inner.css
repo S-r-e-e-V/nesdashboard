@@ -1,0 +1,38 @@
+.inner {
+  padding-top: 70px;
+  margin: 0px 20px;
+}
+.inner .company-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+.inner .ratios {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center; */
+}
+.inner .ratios > div {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 6px;
+  background-color: #e6e4e4;
+  box-shadow: 6px 6px 5px rgb(211, 211, 211);
+}
+@media screen and (max-width: 1200px) {
+  .inner .ratios {
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: center; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inner .ratios {
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-content: center; */
+  }
+}

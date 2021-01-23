@@ -1,0 +1,36 @@
+.login {
+}
+.login form {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login form .create-account {
+  text-decoration: none;
+  color: #000000;
+}
+.login form label {
+  color: #653ecf;
+  font-weight: 600;
+  font-size: 30px;
+}
+.login form > * {
+  margin-top: 20px;
+}
+.login form .login-button {
+  background-color: #7e5dda;
+  color: #ffffff;
+  border: 1px solid #9b81e0;
+  border-radius: 6px;
+  width: 150px;
+  padding: 5px 0px;
+}
+.login form .input-field {
+  position: relative;
+}
+.login form .error {
+  color: red;
+  position: absolute;
+}

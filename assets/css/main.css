@@ -1,0 +1,59 @@
+.main {
+  padding-top: 50px;
+}
+.main .search-bar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #f1f1f1;
+}
+.main .search-bar .search {
+  display: flex;
+  align-items: center;
+
+  margin-top: 0px;
+}
+.main .search .search-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.main .search input {
+  margin-left: 10px;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+  padding-left: 5px;
+  outline: none;
+}
+.main .search-bar .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.main .search-bar .title > div {
+  width: 200px;
+}
+.main .list {
+  padding-top: 100px;
+}
+.main .list .companies a {
+  text-decoration: none;
+  color: #000000;
+}
+.main .list .companies a {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px rgb(238, 238, 238);
+}
+.main .list .companies a > div {
+  width: 200px;
+}
+.main .list .companies a > div:first-child {
+  padding-left: 20px;
+}
