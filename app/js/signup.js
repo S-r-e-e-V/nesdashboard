@@ -36,7 +36,7 @@ angular
           Promise.then(function (response) {
             if (response && response.data) {
               var LoginPromise = apiCall.postData(
-                "http://nse-listing.herokuapp.com/auth/users/login",
+                "https://nse-listing.herokuapp.com/auth/users/login",
                 {
                   username: $scope.username,
                   password: $scope.password,
