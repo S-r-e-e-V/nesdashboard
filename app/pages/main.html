@@ -1,14 +1,20 @@
 <div class="main">
-  <div class="search-bar">
+  <div class="spinner" ng-show="loading">Loading...</div>
+  <div ng-hide="loading" class="search-bar">
     <div class="search">
       <div class="search-text">Search</div>
-      <input type="text" placeholder="Search" ng-model="searchText" />
+      <input
+        type="text"
+        placeholder="Company name or symbol"
+        ng-model="searchText"
+      />
     </div>
     <div class="title">
       <div>Sl.no</div>
       <div>Symbol</div>
       <div>Company</div>
-      <div>Market Capitalisation</div>
+      <div>Date</div>
+      <div>Volume</div>
     </div>
   </div>
   <!-- <table>
@@ -29,13 +35,14 @@
       </tr>
     </tbody>
     </table> -->
-  <div class="list">
+  <div ng-hide="loading" class="list">
     <div class="companies" ng-repeat="item in companyDetails | filter:search">
-      <a ui-sref="home.inner({id:item.symbol})" style="cursor: pointer">
+      <a ui-sref="home.inner({id:item.id})" style="cursor: pointer">
         <div class="index">{{$index+1}}</div>
         <div class="symbol">{{item.symbol}}</div>
         <div class="name">{{item.name}}</div>
-        <div class="stock">{{item.stock}}</div>
+        <div class="stock">{{item.date | date:'MM/dd/yyyy'}}</div>
+        <div class="volume">{{item.volume}}</div>
       </a>
     </div>
   </div>

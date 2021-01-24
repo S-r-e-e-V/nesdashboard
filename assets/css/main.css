@@ -1,6 +1,12 @@
 .main {
   padding-top: 50px;
 }
+.main .spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
 .main .search-bar {
   position: fixed;
   width: 100%;

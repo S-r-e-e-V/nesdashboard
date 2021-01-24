@@ -2,8 +2,14 @@
   padding-top: 70px;
   margin: 0px 20px;
 }
+.inner .spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
 .inner .company-name {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 .inner .ratios {

@@ -1,5 +1,5 @@
 .home .header {
-  background-color: #b3b3b3;
+  background-color: #9aa1e2;
   height: 50px;
   width: 100%;
   display: flex;
@@ -21,4 +21,6 @@
   border: none;
   background-color: transparent;
   color: red;
+  font-weight: 500;
+  font-size: 20px;
 }

@@ -68,3 +68,29 @@ app.factory("apiCall", function ($http) {
 
   return { getData: getData, postData: postData };
 });
+
+app.factory("LoginApiCall", function ($http, $localStorage) {
+  var getData = function (url) {
+    // Angular $http() and then() both return promises themselves
+    return $http({
+      method: "GET",
+      url: url,
+      headers: {
+        "x-access-token": $localStorage.access_token,
+      },
+    }).then(successCallback, errorCallback);
+  };
+
+  var postData = function (url, data) {
+    return $http({
+      method: "POST",
+      url: url,
+      data: data,
+      headers: {
+        "x-access-token": $localStorage.access_token,
+      },
+    }).then(successCallback, errorCallback);
+  };
+
+  return { getData: getData, postData: postData };
+});
