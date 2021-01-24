@@ -17,6 +17,7 @@
   font-weight: 600;
 }
 .home .header input {
+  cursor: pointer;
   outline: none;
   border: none;
   background-color: transparent;
