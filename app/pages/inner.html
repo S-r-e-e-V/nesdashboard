@@ -1,28 +1,32 @@
 <div class="inner">
   <div class="spinner" ng-show="loading">Loading...</div>
   <div ng-hide="loading" class="company-name">
-    {{company.name}} ({{company.symbol}})
+    {{company_name}} ({{company.SYMBOL}})
   </div>
   <div ng-hide="loading" class="ratios">
     <div>
       <span>Market Cap</span>
-      <span>{{company.volume}}</span>
+      <span>{{company.TOTTRDVAL}}</span>
     </div>
     <div>
       <span>High</span>
-      <span>{{company.high | currency:"₹"}}</span>
+      <span>{{company.HIGH | currency:"₹"}}</span>
     </div>
     <div>
       <span>Low</span>
-      <span>{{company.low | currency:"₹"}}</span>
+      <span>{{company.LOW | currency:"₹"}}</span>
     </div>
     <div>
       <span>Open</span>
-      <span>{{company.open | currency:"₹"}}</span>
+      <span>{{company.OPEN | currency:"₹"}}</span>
     </div>
     <div>
       <span>Close</span>
-      <span>{{company.close | currency:"₹"}}</span>
+      <span>{{company.CLOSE | currency:"₹"}}</span>
+    </div>
+    <div>
+      <span>Total Trades</span>
+      <span>{{company.TOTALTRADES}}</span>
     </div>
     <!-- <div>
       <span>Close</span>

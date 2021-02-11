@@ -19,7 +19,7 @@ angular
 
         if ($scope.errorUsername == "" && $scope.errorPassword == "") {
           var Promise = apiCall.postData(
-            "https://nse-listing.herokuapp.com/auth/users/login",
+            "https://nse-listing-2.herokuapp.com/api/auth/login",
             {
               username: $scope.username,
               password: $scope.password,

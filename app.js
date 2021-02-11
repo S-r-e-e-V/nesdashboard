@@ -55,5 +55,6 @@ app.config(function (
   // .otherwise({
   //   redirectTo: "/",
   // });
-  $locationProvider.hashPrefix("");
+  $locationProvider.html5Mode({ enabled: true, requireBase: false });
+  // $locationProvider.hashPrefix("");
 });

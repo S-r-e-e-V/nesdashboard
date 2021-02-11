@@ -3,12 +3,12 @@ angular
   .controller("mainCtrl", function ($scope, LoginApiCall) {
     $scope.loading = true;
     var promises = LoginApiCall.getData(
-      "https://nse-listing.herokuapp.com/stocks/dropdown"
+      "https://nse-listing-2.herokuapp.com/api/stocks/"
     );
     promises.then(function (response) {
       $scope.loading = false;
       if (response && response.data) {
-        $scope.companyDetails = response.data.data;
+        $scope.companyDetails = response.data;
       } else if (response.status == 400) {
         alert("Something went wrong");
       }
@@ -18,9 +18,9 @@ angular
         return true;
       } else {
         if (
-          item.name.toLowerCase().indexOf($scope.searchText.toLowerCase()) !=
+          item.NAME.toLowerCase().indexOf($scope.searchText.toLowerCase()) !=
             -1 ||
-          item.symbol.toLowerCase().indexOf($scope.searchText.toLowerCase()) !=
+          item.SYMBOL.toLowerCase().indexOf($scope.searchText.toLowerCase()) !=
             -1
         ) {
           return true;

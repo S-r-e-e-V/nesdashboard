@@ -76,7 +76,7 @@ app.factory("LoginApiCall", function ($http, $localStorage) {
       method: "GET",
       url: url,
       headers: {
-        "x-access-token": $localStorage.access_token,
+        Authorization: "Bearer " + $localStorage.access_token,
       },
     }).then(successCallback, errorCallback);
   };
@@ -87,7 +87,7 @@ app.factory("LoginApiCall", function ($http, $localStorage) {
       url: url,
       data: data,
       headers: {
-        "x-access-token": $localStorage.access_token,
+        Authorization: "Bearer " + $localStorage.access_token,
       },
     }).then(successCallback, errorCallback);
   };

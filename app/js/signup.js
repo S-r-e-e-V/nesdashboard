@@ -27,7 +27,7 @@ angular
           // });
 
           var Promise = apiCall.postData(
-            "https://nse-listing.herokuapp.com/auth/users/signup",
+            "https://nse-listing-2.herokuapp.com/api/auth/signup",
             {
               username: $scope.username,
               password: $scope.password,
@@ -36,7 +36,7 @@ angular
           Promise.then(function (response) {
             if (response && response.data) {
               var LoginPromise = apiCall.postData(
-                "https://nse-listing.herokuapp.com/auth/users/login",
+                "https://nse-listing-2.herokuapp.com/api/auth/login",
                 {
                   username: $scope.username,
                   password: $scope.password,
